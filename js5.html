@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="js/js5.js"></script>
+    <link rel="stylesheet" href="css/js5.css">
+</head>
+<body>
+    <div>
+        <h1>Calculadora</h1>
+        <br>
+        <div>
+            <label for="numero1">Numero:</label>
+            <input type="number" name="numero1" id="numero1">
+        </div>
+        <br>
+        <div>
+            <label for="numero2">Numero:</label>
+            <input type="number" name="numero2" id="numero2">
+        </div>
+        <br>
+        <div>
+            <label for="operacion">Operacion</label>
+            <select name="operacion" id="operacion">
+                <option value="+">suma</option>
+                <option value="-">resta</option>
+                <option value="*">multiplicacion</option>
+                <option value="/">division</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="resultado">Resultado:</label>
+            <input type="number" name="resultado" id="resultado">
+        </div>
+        <br>
+        <div>
+            <button onclick="calcular()">Haz click</button>
+        </div>
+    </div>
+    <section id="tabla_contenedor">
+        <h2>Tablas</h2>
+        <div class="datos-tabla">
+             <p>
+                  <label for="base-tabla">Tabla: </label>
+                  <input type="text" name="base" id="base">
+             </p>
+             <p>
+                  <label for="longitud">Longitud: </label>
+                  <input type="text" name="longitud" id="longitud">
+             </p>
+             <p>
+                  <label for="orden">Forma: </label>
+                  <select name="orden" id="orden">
+                       <option value="1">Ascendente</option>
+                       <option value="2">Descendente</option>
+                  </select>
+             </p>
+             <p>
+                  <button onclick="tablasM()">Haz click</button>
+             </p>
+        </div>
+        <div id="tabla">
+             
+        </div>
+   </section>
+
+</body>
+</html>
